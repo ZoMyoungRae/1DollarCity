@@ -1,0 +1,25 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>1dollar.city</title>
+  <style>
+    body {
+      background: #fefbe9;
+      color: #333;
+      font-family: sans-serif;
+      text-align: center;
+      padding: 100px;
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #d88c00;
+    }
+  </style>
+</head>
+<body>
+  <h1>버리기 전에 원달러시티~!!</h1>
+  <p>쓸만한 물건을 콜라 한 잔 값에!</p>
+</body>
+</html>
