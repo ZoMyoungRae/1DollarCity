@@ -3,67 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>1Dollar.City - 원달러시티</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>1Dollar.City - 버리기 전에 원달러시티~!!</title>
+  <style>
+    body {
+      font-family: 'Pretendard', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #0099ff;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img {
+      height: 40px;
+    }
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .main-section {
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    .main-section h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .main-section p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .cta-buttons {
+      margin-top: 2rem;
+    }
+    .cta-buttons a {
+      background-color: #0099ff;
+      color: white;
+      padding: 1rem 2rem;
+      margin: 0.5rem;
+      border-radius: 10px;
+      text-decoration: none;
+      display: inline-block;
+      font-weight: bold;
+    }
+    .donation-log {
+      background: white;
+      margin: 4rem auto;
+      padding: 2rem;
+      max-width: 800px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 font-sans">
-  <!-- Header -->
-  <header class="bg-yellow-400 p-6 shadow-md">
-    <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-gray-900">원달러시티</h1>
-      <nav class="space-x-4">
-        <a href="#" class="text-gray-800 hover:underline">홈</a>
-        <a href="#donate" class="text-gray-800 hover:underline">기부하기</a>
-        <a href="#records" class="text-gray-800 hover:underline">기부내역</a>
-        <a href="#contact" class="text-gray-800 hover:underline">문의</a>
-      </nav>
-    </div>
+<body>
+  <header>
+    <img src="logo-01.jpg" alt="1Dollar City 로고">
+    <nav>
+      <a href="#about">소개</a>
+      <a href="#donation">기부내역</a>
+      <a href="#register">판매 등록</a>
+      <a href="#donate">기부하기</a>
+    </nav>
   </header>
 
-  <!-- Hero -->
-  <section class="text-center py-16 bg-white">
-    <h2 class="text-4xl font-bold mb-4">버리기 전에, 원달러.시티!</h2>
-    <p class="text-lg text-gray-700 mb-6">중고 물건을 천원에 판매하고, 그 돈으로 아프리카 친구들을 도울 수 있어요.</p>
-    <a href="#donate" class="bg-yellow-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-600">기부 시작하기</a>
-  </section>
-
-  <!-- 기부하기 Form -->
-  <section id="donate" class="container mx-auto p-8 bg-gray-50 rounded shadow mt-8">
-    <h3 class="text-2xl font-bold mb-6">기부 등록</h3>
-    <form class="grid grid-cols-1 gap-4 md:grid-cols-2">
-      <input type="text" placeholder="판매자 이름" class="p-3 border rounded">
-      <input type="email" placeholder="이메일 (기부 증명용)" class="p-3 border rounded">
-      <input type="text" placeholder="판매한 물품 (예: 접시 5개)" class="p-3 border rounded">
-      <input type="text" placeholder="기부금 송금자 이름 (입금시 동일하게)" class="p-3 border rounded">
-      <textarea placeholder="기타 메모" class="p-3 border rounded md:col-span-2"></textarea>
-      <button class="bg-blue-500 text-white py-3 rounded hover:bg-blue-600 md:col-span-2">기부 등록</button>
-    </form>
-  </section>
-
-  <!-- 기부내역 -->
-  <section id="records" class="container mx-auto p-8 mt-12">
-    <h3 class="text-2xl font-bold mb-4">오늘의 기부 내역</h3>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-      <!-- 기부 카드 샘플 -->
-      <div class="bg-white shadow rounded p-4">
-        <p class="font-semibold">판매자: 홍*동</p>
-        <p>물품: 접시 5개</p>
-        <p>이메일: 1dollar.city@gmail.com</p>
-        <p>기부일: 2025-05-15</p>
-      </div>
-      <div class="bg-white shadow rounded p-4">
-        <p class="font-semibold">판매자: 김*나</p>
-        <p>물품: 책 10권</p>
-        <p>이메일: kn***@naver.com</p>
-        <p>기부일: 2025-05-15</p>
-      </div>
-      <!-- 추가 카드 반복 가능 -->
+  <section class="main-section" id="about">
+    <h1>버리기 전에 원달러시티~!!</h1>
+    <p>아직 쓸만한 물건을 단돈 1달러(₩1,000)에 나누고, 그 돈은 아프리카 등 도움이 필요한 곳에 기부해요. <br>
+    판매자 명의로 기부 내역이 기록되며, 모든 기록은 투명하게 공개됩니다.</p>
+    <div class="cta-buttons">
+      <a href="#register">물건 등록하기</a>
+      <a href="#donate">기부 입금하기</a>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer id="contact" class="bg-gray-800 text-white text-center p-6 mt-12">
-    <p>© 2025 원달러시티 | 문의: 1dollar.city@gmail.com</p>
+  <section class="donation-log" id="donation">
+    <h2>최근 기부 내역</h2>
+    <ul>
+      <li>🧺 김○○ / kim****@naver.com / 그릇 5개 판매 후 ₩5,000 기부 완료</li>
+      <li>📚 박○○ / 010-****-1234 / 책 10권 판매 후 ₩10,000 기부 완료</li>
+      <!-- 자동 업데이트될 영역 -->
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2025 1Dollar.City | 기획 및 운영: 히디 | 기부금은 아프리카 현지 NGO와 협업하여 전달됩니다.
   </footer>
 </body>
 </html>
