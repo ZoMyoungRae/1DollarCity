@@ -1,53 +1,69 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>1dollar.city - 버리기 전에!</title>
-  <style>
-    body {
-      font-family: "Pretendard", sans-serif;
-      background-color: #fef9ef;
-      color: #333;
-      text-align: center;
-      padding: 50px 20px;
-    }
-    h1 {
-      font-size: 2.8em;
-      color: #0074D9;
-    }
-    h2 {
-      color: #ff851b;
-      margin-top: 10px;
-    }
-    p {
-      font-size: 1.2em;
-      line-height: 1.7;
-      max-width: 600px;
-      margin: 20px auto;
-    }
-    .footer {
-      margin-top: 50px;
-      color: #888;
-      font-size: 0.9em;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1Dollar.City - 원달러시티</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <h1>버리기 전에 원달러.시리~!!</h1>
-  <h2>쓸만한 물건을 콜라 한 잔 값에!</h2>
-  <p>
-    당신에겐 더 이상 필요 없지만 누군가에겐 꼭 필요한 물건이 있나요?<br />
-    <strong>1dollar.city</strong>에 올려보세요.<br />
-    전 세계 어디서든 필요한 사람에게 기회가 될 수 있어요.
-  </p>
-  <p>
-    돈내고 버리지 말고<br />
-    1,000원만 받고 나눔하는 따뜻한 도시,<br />
-    <strong>원달러.시리</strong>입니다 🌍
-  </p>
-  <div class="footer">
-    &copy; 2025 1dollar.city | Powered by Hidi.Works....love you 🧡
-  </div>
+<body class="bg-gray-100 font-sans">
+  <!-- Header -->
+  <header class="bg-yellow-400 p-6 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-gray-900">원달러시티</h1>
+      <nav class="space-x-4">
+        <a href="#" class="text-gray-800 hover:underline">홈</a>
+        <a href="#donate" class="text-gray-800 hover:underline">기부하기</a>
+        <a href="#records" class="text-gray-800 hover:underline">기부내역</a>
+        <a href="#contact" class="text-gray-800 hover:underline">문의</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-16 bg-white">
+    <h2 class="text-4xl font-bold mb-4">버리기 전에, 원달러.시티!</h2>
+    <p class="text-lg text-gray-700 mb-6">중고 물건을 천원에 판매하고, 그 돈으로 아프리카 친구들을 도울 수 있어요.</p>
+    <a href="#donate" class="bg-yellow-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-600">기부 시작하기</a>
+  </section>
+
+  <!-- 기부하기 Form -->
+  <section id="donate" class="container mx-auto p-8 bg-gray-50 rounded shadow mt-8">
+    <h3 class="text-2xl font-bold mb-6">기부 등록</h3>
+    <form class="grid grid-cols-1 gap-4 md:grid-cols-2">
+      <input type="text" placeholder="판매자 이름" class="p-3 border rounded">
+      <input type="email" placeholder="이메일 (기부 증명용)" class="p-3 border rounded">
+      <input type="text" placeholder="판매한 물품 (예: 접시 5개)" class="p-3 border rounded">
+      <input type="text" placeholder="기부금 송금자 이름 (입금시 동일하게)" class="p-3 border rounded">
+      <textarea placeholder="기타 메모" class="p-3 border rounded md:col-span-2"></textarea>
+      <button class="bg-blue-500 text-white py-3 rounded hover:bg-blue-600 md:col-span-2">기부 등록</button>
+    </form>
+  </section>
+
+  <!-- 기부내역 -->
+  <section id="records" class="container mx-auto p-8 mt-12">
+    <h3 class="text-2xl font-bold mb-4">오늘의 기부 내역</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <!-- 기부 카드 샘플 -->
+      <div class="bg-white shadow rounded p-4">
+        <p class="font-semibold">판매자: 홍*동</p>
+        <p>물품: 접시 5개</p>
+        <p>이메일: 1dollar.city@gmail.com</p>
+        <p>기부일: 2025-05-15</p>
+      </div>
+      <div class="bg-white shadow rounded p-4">
+        <p class="font-semibold">판매자: 김*나</p>
+        <p>물품: 책 10권</p>
+        <p>이메일: kn***@naver.com</p>
+        <p>기부일: 2025-05-15</p>
+      </div>
+      <!-- 추가 카드 반복 가능 -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-gray-800 text-white text-center p-6 mt-12">
+    <p>© 2025 원달러시티 | 문의: 1dollar.city@gmail.com</p>
+  </footer>
 </body>
 </html>
